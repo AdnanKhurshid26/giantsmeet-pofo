@@ -1,0 +1,403 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+- Primary: #0088f7
+- Tints:
+#b7dfff
+#80c4fb
+#4dacf9
+- Shades: 
+#006dc6
+#003663
+
+- Accents:
+- Greys
+
+#888
+#767676 (lightest grey allowed on #fff)
+#6f6f6f (lightest grey allowed on #fdf2e9)
+#555
+#333
+
+--- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1;
+  font-weight: 400;
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+/* REUSABLE COMPONENTS */
+
+.primary-heading {
+  font-family: "Nunito Sans";
+  font-size: 4.8rem;
+  color: #fff;
+  line-height: 1.1;
+  letter-spacing: 3.6px;
+  margin-top: 8.4rem;
+  font-size: 4.2rem;
+  letter-spacing: 8px;
+  margin-bottom: 4.8rem;
+}
+
+.section-primary {
+  max-width: 140rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4.2rem 12rem;
+  font-family: "nunito sans";
+  color: white;
+}
+
+.btn button {
+  border: solid 3px white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 8px;
+  word-spacing: 8px;
+  padding: 1rem 2.4rem;
+  background-color: #000;
+  color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.btn button:hover {
+  font-size: 1.5rem;
+  transition: all 0.3s;
+}
+/************************* ANIMATIONS ***********************/
+
+/* NAVIGATION BAR */
+
+header {
+  width: 100vw;
+  height: 8.4rem;
+  position: fixed;
+  background-color: #000;
+  z-index: 10;
+}
+
+nav {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 2.4rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-nav-list {
+  display: flex;
+  gap: 4.8rem;
+  font-family: Poppins;
+  list-style: none;
+}
+
+.main-nav-link:visited,
+.main-nav-link:link {
+  display: inline-block;
+  color: #a7a7a7;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 3.2px;
+  line-height: 1.1;
+  padding: 0.7rem 1.4rem;
+  border: solid 2px transparent;
+  border-radius: 0.6rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #fff;
+}
+
+.btn-cta:visited,
+.btn-cta:link {
+  background-color: white;
+  color: #000;
+}
+
+.btn-cta:hover,
+.btn-cta:active {
+  background-color: white;
+  color: #000;
+}
+/***************** BURGER MENU *********************/
+
+.burger {
+  display: none;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.burger div {
+  width: 2.5rem;
+  height: 0.3rem;
+  background-color: #fff;
+  margin: 5px;
+}
+
+/***************** MAIN *********************/
+
+main {
+  width: 100vw;
+}
+
+/**************************** HOME ***************************/
+
+.home {
+  gap: 3.2rem;
+  padding: 6.4rem;
+}
+.home h1 {
+  font-family: "Nunito Sans";
+  font-size: 4.8rem;
+  color: #fff;
+  line-height: 1.1;
+  letter-spacing: 3.6px;
+}
+.home img {
+  margin-top: 8.4rem;
+  height: 25rem;
+  border-radius: 50%;
+}
+
+.home-text {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 20rem;
+}
+.home-text p {
+  color: #c0c0c0;
+  font-size: 1.6rem;
+  font-family: "rubik";
+  line-height: 1.6;
+  letter-spacing: 3px;
+  word-spacing: 8px;
+}
+
+/***************************** ABOUT ******************************/
+
+.about p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  letter-spacing: 3px;
+  word-spacing: 8px;
+  color: #b2b2b2;
+}
+.intro-long {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  padding: 2rem 6.4rem;
+  gap: 6.4rem;
+
+  margin-bottom: 4rem;
+}
+.five-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #b2b2b2;
+  list-style: disc #b2b2b2;
+}
+.five-skills h1 {
+  margin-bottom: 2.4rem;
+  font-size: 3.6rem;
+  color: #fff;
+}
+.five-skills li {
+  margin-bottom: 1.4rem;
+  font-size: 2.4rem;
+}
+
+/***************************** PROJECTS ******************************/
+
+.project-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.2rem;
+}
+.project-card {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 2.4rem;
+}
+.project-card img {
+  height: 14rem;
+}
+.project-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Nunito Sans";
+}
+.project-details h1 {
+  margin-top: 0;
+
+  color: #cccccc;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.project-details p {
+  color: #b2b2b2;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 1.3;
+  word-spacing: 8px;
+  margin-bottom: 1.6rem;
+}
+.project-details button {
+  background-color: #000;
+  color: #b2b2b2;
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+  border: solid 2px #b2b2b2;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/************************************** CONTACT **************************/
+
+.input-field {
+  margin-bottom: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+label {
+  display: block;
+  color: white;
+  font-size: 1.8rem;
+  color: #a3a3a3;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 0.6rem;
+}
+input {
+  width: 54rem;
+  height: 4rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: #000;
+  border: solid 2px #d9d9d9;
+  font-family: "Rubik";
+  font-style: italic;
+  letter-spacing: 2px;
+  color: white;
+}
+
+textarea {
+  resize: none;
+  background-color: #000;
+  border: solid 2px #d9d9d9;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-family: "Rubik";
+  letter-spacing: 2px;
+  color: white;
+  font-style: italic;
+}
+
+footer {
+  width: 100vw;
+  background-color: #fff;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 3.2rem 8rem;
+}
+.footer-content p {
+  color: #565656;
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+.logo img {
+  height: 8rem;
+}
+.footer-list ul {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  justify-content: center;
+  align-items: center;
+}
+.footer-list ul li a:visited,
+.footer-list ul li a:link {
+  font-family: "Nunito Sans";
+  color: #7a7a7a;
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+.footer-list ul li a:hover,
+.footer-list ul li a:active {
+  color: #000;
+}
