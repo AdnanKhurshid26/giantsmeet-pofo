@@ -401,3 +401,145 @@ footer {
 .footer-list ul li a:active {
   color: #000;
 }
+
+/************************************** MODAL **************************/
+
+.project-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 90%;
+  height: auto;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  /* padding: 2rem; */
+  padding-top: 7.2rem;
+  position: relative;
+  border-radius: 1rem;
+  margin: auto;
+}
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 4rem;
+  color: #000000;
+
+  background-color: transparent;
+  font-size: 4.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 1rem;
+  border: transparent solid 2px;
+  transition: all 0.4s;
+}
+.close-modal:hover {
+  color: #ec1c24;
+  transform: scale(1.1);
+}
+.modal-gallery {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+}
+.featured {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.featured img {
+  object-fit: cover;
+  height: 50vh;
+  max-width: 100%;
+}
+#slide-wrapper {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#slider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thumbnail {
+  object-fit: cover;
+  max-width: 6vw;
+  max-height: 6vw;
+  cursor: pointer;
+  opacity: 0.7;
+  margin: 0 5px;
+  transition: all 0.3s;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.603);
+}
+
+.active {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.modal-details {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+}
+.modal-details p {
+  font-size: 1.6vw;
+  line-height: 1.4;
+  padding: 1.4rem;
+  color: #000;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+.skills {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.skills h1 {
+  color: #000;
+  font-weight: 700;
+  font-size: 2vw;
+  margin-bottom: 2rem;
+}
+.skill-items {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1.6vw;
+  color: black;
+}
+.skill-item {
+  padding: 0.7vw 2vw;
+  font-size: 1.1vw;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.1;
+  text-align: center;
+  border-radius: 1.3vw;
+  background-color: #ececec;
+}
+
+.hidden {
+  display: none;
+}

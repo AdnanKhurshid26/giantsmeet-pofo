@@ -19,14 +19,14 @@ html {
     right: 0px;
     height: calc(100vh - 64px);
     top: 6.3rem;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
     width: 50%;
-    transform: translateY(-110%);
-    transition: transform 0.8s ease-in-out;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
   }
   /* .main-nav-link {
     opacity: 1;
@@ -187,6 +187,62 @@ html {
     font-size: 1.4rem;
     letter-spacing: 3px;
   }
+
+  .modal-content {
+    width: 90%;
+    height: auto;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    /* padding: 2rem; */
+    padding-top: 7.2rem;
+    position: relative;
+    border-radius: 1rem;
+    margin: auto;
+  }
+
+  .modal-gallery {
+    height: 100%;
+
+    gap: 3rem;
+  }
+  .featured {
+    width: 100%;
+    height: 100%;
+  }
+  .featured img {
+    height: 32vh;
+  }
+
+  .thumbnail {
+    max-width: 10vw;
+    max-height: 10vw;
+    margin: 0 7px;
+    border-radius: 0.7rem;
+  }
+
+  .modal-details {
+    height: 100%;
+    grid-template-rows: auto auto;
+  }
+
+  .modal-details p {
+    font-size: 3.2vw;
+  }
+
+  .skills h1 {
+    font-size: 4vw;
+    margin-bottom: 2rem;
+  }
+  .skill-items {
+    gap: 2vw;
+  }
+  .skill-item {
+    padding: 1.2vw 3.2vw;
+    font-size: 1.8vw;
+    border-radius: 1.8vw;
+  }
 }
 @media screen and (max-width: 544px) {
   header {
@@ -202,9 +258,9 @@ html {
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    width: 100%;
-    transform: translateY(-110%);
-    transition: transform 0.8s ease-in-out;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
   }
   /* .main-nav-link {
     opacity: 1;
@@ -366,5 +422,63 @@ html {
   .footer-list ul li a:link {
     font-size: 0.8rem;
     letter-spacing: 3px;
+  }
+  .modal-content {
+    width: 90%;
+    height: auto;
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    padding-bottom: 4.8rem;
+  }
+  .close-modal {
+    position: absolute;
+    top: 0.4rem;
+    right: 1.7rem;
+    font-size: 3.6rem;
+  }
+
+  .modal-gallery {
+    height: 100%;
+    gap: 0rem;
+  }
+  .featured {
+    width: 100%;
+    height: 100%;
+  }
+  .featured img {
+    height: 25vh;
+  }
+
+  .thumbnail {
+    max-width: 4.5vh;
+    max-height: 4.5vh;
+    margin: 0 5px;
+    border-radius: 0.6vh;
+  }
+
+  .modal-details {
+    height: 100%;
+    grid-template-rows: auto auto;
+  }
+
+  .modal-details p {
+    font-size: 1.6vh;
+    color: #000;
+  }
+
+  .skills h1 {
+    font-size: 2.4vh;
+    margin-bottom: 1.2rem;
+    color: #000;
+  }
+  .skill-items {
+    gap: 1.2vh;
+    color: #000;
+  }
+  .skill-item {
+    padding: 1.2vw 3.2vw;
+    font-size: 2.4vw;
+    border-radius: 0.8vh;
+    color: #000;
   }
 }
