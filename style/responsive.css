@@ -447,6 +447,8 @@ html {
   }
   .featured img {
     height: 25vh;
+    max-width: 90%;
+    object-fit: cover;
   }
 
   .thumbnail {
