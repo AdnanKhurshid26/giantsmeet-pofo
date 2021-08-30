@@ -276,11 +276,11 @@ html {
   }
   .home {
     gap: 1.6rem;
-    padding: 4.8rem;
+    padding: 2.4rem;
   }
   .home img {
     margin-top: 6rem;
-    height: 16rem;
+    height: 18rem;
     border-radius: 50%;
   }
   .home h1 {
@@ -293,12 +293,13 @@ html {
   }
   .home-text p {
     font-size: 1.6rem;
+    text-align: justify;
 
     letter-spacing: 2px;
     word-spacing: 4px;
   }
   .about {
-    padding: 1.8rem 3.6rem;
+    padding: 1.8rem 2.4rem;
   }
   .about h1 {
     margin-top: 6rem;
@@ -307,10 +308,11 @@ html {
     margin-bottom: 3rem;
   }
   .about p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     line-height: 1.4;
     letter-spacing: 2px;
     word-spacing: 5px;
+    text-align: justify;
   }
   .intro-long {
     grid-template-columns: 1fr;
@@ -330,7 +332,7 @@ html {
   }
 
   .projects {
-    padding: 2.1rem 4.8rem;
+    padding: 2.1rem 2.4rem;
   }
   .projects h1 {
     margin-top: 6rem;
@@ -350,7 +352,7 @@ html {
     padding: 1.2rem;
   }
   .project-card img {
-    height: 14rem;
+    height: 48vw;
   }
   .project-details {
     display: flex;
@@ -385,7 +387,7 @@ html {
     cursor: pointer;
   }
   .contact {
-    padding: 1.6rem 3.6rem;
+    padding: 1.6rem 2.4rem;
   }
   .contact h1 {
     margin-top: 6rem;
@@ -394,15 +396,21 @@ html {
     margin-bottom: 3rem;
   }
   .input-field {
-    margin-bottom: 1.4rem;
+    margin-bottom: 2.4rem;
   }
   label {
-    font-size: 1.2rem;
+    font-size: 3.6vw;
     margin-bottom: 0.4rem;
   }
   input {
-    width: 30rem;
-    height: 2.8rem;
+    width: 90vw;
+    height: 12vw;
+    border-radius: 2vw;
+  }
+  textarea {
+    width: 90vw;
+    height: 54vw;
+    border-radius: 2vw;
   }
 
   .footer-content {
@@ -452,10 +460,12 @@ html {
   }
 
   .thumbnail {
-    max-width: 4.5vh;
-    max-height: 4.5vh;
+    max-width: 9.6vw;
+    max-height: 9.6vw;
     margin: 0 5px;
-    border-radius: 0.6vh;
+    border-radius: 0.5vw;
+
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.603);
   }
 
   .modal-details {
@@ -464,8 +474,12 @@ html {
   }
 
   .modal-details p {
-    font-size: 1.6vh;
+    font-size: 3.6vw;
     color: #000;
+    padding: 0;
+  }
+  .skills {
+    padding: 0rem;
   }
 
   .skills h1 {
@@ -478,9 +492,9 @@ html {
     color: #000;
   }
   .skill-item {
-    padding: 1.2vw 3.2vw;
+    padding: 1.6vw 3.2vw;
     font-size: 2.4vw;
-    border-radius: 0.8vh;
+    border-radius: 2.4vw;
     color: #000;
   }
 }
